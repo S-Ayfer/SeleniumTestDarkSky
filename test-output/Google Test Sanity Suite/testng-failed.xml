@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Google Test Sanity Suite]">
+  <test thread-count="5" verbose="3" name="Google Sanity Test(failed)">
+    <classes>
+      <class name="Tests.GoogleMainPageTest">
+        <methods>
+          <include name="getTitle"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests.GoogleMainPageTest -->
+    </classes>
+  </test> <!-- Google Sanity Test(failed) -->
+  <test thread-count="5" verbose="3" name="Verizon Sanity Test(failed)">
+    <classes>
+      <class name="Tests.VerizonShoppingPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="doSendAndClick"/>
+        </methods>
+      </class> <!-- Tests.VerizonShoppingPageTest -->
+      <class name="Tests.VerizonMainPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="getTitle"/>
+        </methods>
+      </class> <!-- Tests.VerizonMainPageTest -->
+    </classes>
+  </test> <!-- Verizon Sanity Test(failed) -->
+</suite> <!-- Failed suite [Google Test Sanity Suite] -->
